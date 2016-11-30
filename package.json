@@ -1,0 +1,20 @@
+{
+  "name": "god-of-gamblers",
+  "version": "1.0.0",
+  "description": "Quiz for Junior Web Developer position in Dcard",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-jest": "^17.0.2",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.2"
+  }
+}
