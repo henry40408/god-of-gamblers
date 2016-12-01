@@ -4,6 +4,7 @@
   "description": "Quiz for Junior Web Developer position in Dcard",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint lib/**/*.js test/**/*.spec.js",
     "test": "./node_modules/.bin/jest"
   },
   "keywords": [],
@@ -12,7 +13,12 @@
   "devDependencies": {
     "babel-jest": "^17.0.2",
     "babel-polyfill": "^6.16.0",
-    "babel-preset-es2015": "^6.18.0"
+    "babel-preset-es2015": "^6.18.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "latest",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0"
   },
   "dependencies": {
     "lodash": "^4.17.2"
