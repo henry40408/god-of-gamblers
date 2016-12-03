@@ -3,6 +3,7 @@
 import {
   ACE, JACK, KING, QUEEN,
   CLUB, DIAMOND, HEART, SPADE,
+  SUITS,
   Card,
 } from '../lib/card';
 
@@ -37,6 +38,7 @@ describe('Card', () => {
           const rank = parseInt(rawRank, 10);
           const card = new Card(`${suit}${rank}`);
           expect(card.rank).toBe(rank);
+          expect(card.suit).toBe(SUITS[suit]);
         });
       });
     });
