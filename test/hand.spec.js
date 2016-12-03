@@ -2,6 +2,14 @@
 
 import lodash from 'lodash';
 
+import {
+  FLUSH,
+  FOUR_OF_A_KIND,
+  FULL_HOUSE,
+  STRAIGHT,
+  STRAIGHT_FLUSH,
+} from '../lib/constants';
+
 import Deck from '../lib/deck';
 import Hand from '../lib/hand';
 
@@ -60,6 +68,7 @@ describe('Hand', () => {
     it('returns true when the hand is a flush', () => {
       const flush = new Hand('DA,D2,DK,D8,D10');
       expect(flush.isFlush()).toBe(true);
+      expect(flush.getType()).toBe(FLUSH);
     });
 
     it('returns false when the hand is not a flush', () => {
@@ -75,6 +84,7 @@ describe('Hand', () => {
     it('returns true when the hand is a straight', () => {
       const straight = new Hand('H5,D6,C7,S8,D9');
       expect(straight.isStraight()).toBe(true);
+      expect(straight.getType()).toBe(STRAIGHT);
     });
 
     it('returns true when the hand is not a straight', () => {
@@ -90,6 +100,7 @@ describe('Hand', () => {
     it('returns true when the hand is a straight flush', () => {
       const straightFlush = new Hand('C3,C4,C5,C6,C7');
       expect(straightFlush.isStraightFlush()).toBe(true);
+      expect(straightFlush.getType()).toBe(STRAIGHT_FLUSH);
     });
   });
 
@@ -97,6 +108,7 @@ describe('Hand', () => {
     it('returns true when the hand is a four of a kind', () => {
       const fourOfAKind = new Hand('SK,SA,HA,DA,CA');
       expect(fourOfAKind.isFourOfAKind()).toBe(true);
+      expect(fourOfAKind.getType()).toBe(FOUR_OF_A_KIND);
     });
   });
 
@@ -104,6 +116,7 @@ describe('Hand', () => {
     it('returns true when the hand is a full house', () => {
       const fullHouse = new Hand('SA,CA,HA,SJ,HJ');
       expect(fullHouse.isFullHouse()).toBe(true);
+      expect(fullHouse.getType()).toBe(FULL_HOUSE);
     });
   });
 });
