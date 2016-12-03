@@ -4,8 +4,8 @@
   "description": "Quiz for Junior Web Developer position in Dcard",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint lib/**/*.js test/**/*.spec.js",
-    "test": "./node_modules/.bin/jest"
+    "lint": "eslint lib/**/*.js test/**/*.spec.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
