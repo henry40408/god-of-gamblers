@@ -13,8 +13,10 @@
 **** One of the following typs (Reference: https://goo.gl/GRiLAa)
 ***** DONE Straight flush
       CLOSED: [2016-12-04 日 01:54]
-***** TODO Four of a kind
-***** TODO Full house
+***** DONE Four of a kind
+      CLOSED: [2016-12-04 日 07:27]
+***** DONE Full house
+      CLOSED: [2016-12-04 日 07:32]
 ***** DONE Flush
       CLOSED: [2016-12-04 日 01:54]
 ***** DONE Straight

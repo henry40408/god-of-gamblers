@@ -89,7 +89,21 @@ describe('Hand', () => {
   describe('isStraightFlush', () => {
     it('returns true when the hand is a straight flush', () => {
       const straightFlush = new Hand('C3,C4,C5,C6,C7');
-      expect(straightFlush.isStraightFlush());
+      expect(straightFlush.isStraightFlush()).toBe(true);
+    });
+  });
+
+  describe('isFourOfAKind', () => {
+    it('returns true when the hand is a four of a kind', () => {
+      const fourOfAKind = new Hand('SK,SA,HA,DA,CA');
+      expect(fourOfAKind.isFourOfAKind()).toBe(true);
+    });
+  });
+
+  describe('isFullHouse', () => {
+    it('returns true when the hand is a full house', () => {
+      const fullHouse = new Hand('SA,CA,HA,SJ,HJ');
+      expect(fullHouse.isFullHouse()).toBe(true);
     });
   });
 });
