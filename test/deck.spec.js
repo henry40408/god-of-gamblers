@@ -1,7 +1,7 @@
 /* eslint-env jest */
 
-import { Card } from '../lib/card';
-import { Deck } from '../lib/deck';
+import Card from '../lib/card';
+import Deck from '../lib/deck';
 
 describe('Deck', () => {
   it('exists', () => {

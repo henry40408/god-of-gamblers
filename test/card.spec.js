@@ -1,11 +1,12 @@
 /* eslint-env jest */
 
-import { Card } from '../lib/card';
 import {
   SUITS, RANKS,
   SPADE,
   ACE,
 } from '../lib/constants';
+
+import Card from '../lib/card';
 
 describe('Card', () => {
   it('exists', () => {
