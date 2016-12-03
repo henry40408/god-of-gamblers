@@ -39,8 +39,8 @@ describe('Card', () => {
     });
 
     it('does not accept invalid rank', () => {
-      expect(() => new Card({ suit: SPADE, rank: 0 })).toThrow();
-      expect(() => new Card({ suit: SPADE, rank: 14 })).toThrow();
+      expect(() => new Card({ suit: SPADE, rank: 1 })).toThrow();
+      expect(() => new Card({ suit: SPADE, rank: 15 })).toThrow();
     });
   });
 });

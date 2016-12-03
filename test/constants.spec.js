@@ -14,9 +14,9 @@ describe('Constants', () => {
   });
 
   it('contains all face ranks', () => {
-    expect(ACE).toBe(1);
     expect(JACK).toBe(11);
     expect(QUEEN).toBe(12);
     expect(KING).toBe(13);
+    expect(ACE).toBe(14);
   });
 });
