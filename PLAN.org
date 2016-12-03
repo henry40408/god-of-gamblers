@@ -1,16 +1,19 @@
 * God of Gamblers
 ** Data structures
-*** TODO Card
+*** DONE Card
+    CLOSED: [2016-12-04 日 07:46]
 **** DONE Have suit and rank
      CLOSED: [2016-12-01 Thu 12:22]
 **** DONE Suit: Spade, Heart, Diamond, Club
      CLOSED: [2016-12-01 Thu 11:50]
 **** DONE Rank: Ace, 2..10, Jack, Queen, King
      CLOSED: [2016-12-01 Thu 11:54]
-*** TODO Hand
+*** DONE Hand
+    CLOSED: [2016-12-04 日 07:46]
 **** DONE Holds five cards
      CLOSED: [2016-12-04 日 00:13]
-**** One of the following typs (Reference: https://goo.gl/GRiLAa)
+**** DONE One of the following typs (Reference: https://goo.gl/GRiLAa)
+     CLOSED: [2016-12-04 日 07:45]
 ***** DONE Straight flush
       CLOSED: [2016-12-04 日 01:54]
 ***** DONE Four of a kind
@@ -21,7 +24,8 @@
       CLOSED: [2016-12-04 日 01:54]
 ***** DONE Straight
       CLOSED: [2016-12-04 日 01:54]
-***** TODO None
+***** DONE None
+      CLOSED: [2016-12-04 日 07:45]
 ** Comparator
 *** TODO Takes two hands of cards, returns -1, 0, or 1
 **** -1 means first hands of cards is greater
@@ -31,6 +35,7 @@
 *** DONE Shuffle
     CLOSED: [2016-12-04 日 00:20]
 **** Needs a "true" shuffle algorithm
+**** There is not "true" random function available now
 *** DONE Distrubute
     CLOSED: [2016-12-04 日 00:21]
 **** Distribute cards one card by one card

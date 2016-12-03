@@ -1,6 +1,9 @@
 /* eslint-env jest */
 
+import lodash from 'lodash';
+
 import Card from '../lib/card';
+import Hand from '../lib/hand';
 import Deck from '../lib/deck';
 
 describe('Deck', () => {
@@ -13,12 +16,27 @@ describe('Deck', () => {
     expect(deck.cards).toHaveLength(52);
   });
 
-  it('distribute a card', () => {
+  it('distributes a card', () => {
     const deck = new Deck();
 
     const card = deck.distribute();
     expect(card).toBeInstanceOf(Card);
     expect(deck.isShuffled).toBe(true);
     expect(deck.cards).toHaveLength(51);
+  });
+
+  it('distributes a hand', () => {
+    const deck = new Deck();
+
+    const hand = deck.distributeHand();
+    expect(hand).toBeInstanceOf(Hand);
+    expect(deck.isShuffled).toBe(true);
+    expect(deck.cards).toHaveLength(47);
+  });
+
+  it('does not distribute when empty', () => {
+    const deck = new Deck();
+    lodash.times(52, () => deck.distribute());
+    expect(() => deck.distribute()).toThrow();
   });
 });
