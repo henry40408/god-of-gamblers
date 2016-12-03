@@ -10,7 +10,7 @@
 *** TODO Hand
 **** DONE Holds five cards
      CLOSED: [2016-12-04 日 00:13]
-**** One of the following typs
+**** One of the following typs (Reference: https://goo.gl/GRiLAa)
 ***** DONE Straight flush
       CLOSED: [2016-12-04 日 01:54]
 ***** TODO Four of a kind
