@@ -22,5 +22,13 @@
   },
   "dependencies": {
     "lodash": "^4.17.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henry40408/god-of-gamblers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/henry40408/god-of-gamblers/issues"
+  },
+  "homepage": "https://github.com/henry40408/god-of-gamblers#readme"
 }
