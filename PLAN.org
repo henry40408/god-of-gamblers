@@ -27,7 +27,8 @@
 ***** DONE None
       CLOSED: [2016-12-04 日 07:45]
 ** Comparator
-*** TODO Takes two hands of cards, returns -1, 0, or 1
+*** DONE Takes two hands of cards, returns -1, 0, or 1
+    CLOSED: [2016-12-04 日 08:16]
 **** -1 means first hands of cards is greater
 **** 0 means two hands of cards are equal
 **** 1 means second hands of cards is greater
@@ -39,3 +40,4 @@
 *** DONE Distrubute
     CLOSED: [2016-12-04 日 00:21]
 **** Distribute cards one card by one card
+**** Also can distribute a hand of cards
