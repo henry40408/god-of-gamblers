@@ -1,6 +1,6 @@
 # God of Gamblers #
 
-> Quiz for Junior Web Developer position in Dcard
+> Quiz for Dcard Junior Web Developer
 
 ## Question ##
 
